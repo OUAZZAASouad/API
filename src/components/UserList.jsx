@@ -14,11 +14,7 @@ const UserList = () => {
 
     return(
         <div style = {{display : 'grid', gridColumnGap :'20px', gridTemplateColumns:'repeat(4, 1fr)',gridRowGap : '40px', gridColumn : '2 / span 1', gridRow : '2 / span 1'}}>
-            {userList.map(item =>  
-                <div>
-                        <Card user = {item}/>
-                </div>
-            )}
+            {userList.map(item => <Card user = {item}/>)}
                 
         </div>
     )
